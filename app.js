@@ -51,6 +51,10 @@ app.get('/bacheca', (req, res) => {
     res.json(post);
 });
 
+// importo le rotte
+const postRouter = require('./router/posts');
+app.use("/posts", postRouter);
+
 // inseriamo il metodo che lascia in ascolto il server
 app.listen(port, () => {
     console.log(`Server in ascolto alla porta ${port}`);
