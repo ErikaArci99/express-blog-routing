@@ -15,8 +15,14 @@ app.get('/:id', (req, res) => {
 
 // store
 app.post('/', (req, res) => {
-    res.send('Creazione nuova pizza');
+    res.send('Creazione nuovo post');
   });
+
+//  update
+app.put('/:id', (req, res) => {
+    res.send('Modifica integrale del post' + req.params.id);
+  });
+
 
 
 
