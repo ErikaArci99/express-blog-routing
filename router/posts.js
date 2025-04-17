@@ -4,15 +4,19 @@ const router = express.Router();
 // creo le nuove rotte
 
 // index
-router.get('/', (req, res) => {
+app.get('/', (req, res) => {
     res.send('Lista dei post');
   });
 
 // show
-router.get('/:id', (req, res) => {
+app.get('/:id', (req, res) => {
     res.send('Dettagli del post' + req.params.id);
   });
 
+// store
+app.post('/', (req, res) => {
+    res.send('Creazione nuova pizza');
+  });
 
 
 
