@@ -8,6 +8,11 @@ router.get('/', (req, res) => {
     res.send('Lista dei post');
   });
 
+// show
+router.get('/:id', (req, res) => {
+    res.send('Dettagli del post' + req.params.id);
+  });
+
 
 
 
