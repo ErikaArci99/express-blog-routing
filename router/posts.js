@@ -23,7 +23,10 @@ app.put('/:id', (req, res) => {
     res.send('Modifica integrale del post' + req.params.id);
   });
 
-
+// modify
+app.patch('/:id', (req, res) => {
+    res.send('Modifca parziale del post' + req.params.id);
+  });
 
 
 
