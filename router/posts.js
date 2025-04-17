@@ -28,8 +28,10 @@ app.patch('/:id', (req, res) => {
     res.send('Modifca parziale del post' + req.params.id);
   });
 
-
-
+// destroy
+app.delete('/:id', (req, res) => {
+    res.send('Eliminazione del post' + req.params.id);
+  });
 
 //  esporto le rotte in app.js
 module.exports = router;
