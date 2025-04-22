@@ -52,7 +52,7 @@ app.get('/bacheca', (req, res) => {
 });
 
 // importo le rotte
-const postRouter = require('./router/posts');
+const postRouter = require('./router/posts.js');
 app.use("/posts", postRouter);
 
 // inseriamo il metodo che lascia in ascolto il server
